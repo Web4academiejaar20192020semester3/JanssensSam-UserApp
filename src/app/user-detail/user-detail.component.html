@@ -1,0 +1,19 @@
+<div *ngIf="user">
+
+  <div>
+    <!--<h2>{{user.userId}}</h2>
+    <br>-->
+    <label for="email">E-mail:</label>
+    <input [(ngModel)]="user.userId" type="text" id="email"/>
+    <label for="fname">Firstname:</label>
+    <input [(ngModel)]="user.firstName" type="text" id="fname"/>
+    <label for="lname">Lastname:</label>
+    <input [(ngModel)]="user.lastName" type="text" id="lname"/>
+    <label for="gender">Gender:</label>
+    <input [(ngModel)]="user.gender" type="text" id="gender"/>
+    <label for="age">Age:</label>
+    <input [(ngModel)]="user.age" type="number" id="age"/>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>
